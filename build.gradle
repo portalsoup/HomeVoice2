@@ -1,0 +1,21 @@
+group 'com.portalsoup'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+
+dependencies {
+    compile group: 'edu.cmu.sphinx', name: 'sphinx4-core', version:'5prealpha-SNAPSHOT'
+    compile group: 'edu.cmu.sphinx', name: 'sphinx4-data', version:'5prealpha-SNAPSHOT'
+    compile group: 'org.apache.commons', name: 'commons-math3', version:'3.2'
+
+    // https://mvnrepository.com/artifact/org.json/json
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+}
